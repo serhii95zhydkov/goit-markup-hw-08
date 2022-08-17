@@ -1,0 +1,26 @@
+.logo {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+    color: var(--accent-color);
+}
+
+.logo__accent {
+    color: #000000;
+}
+
+.logo__footer {
+    margin-right: 0;
+    padding: 0;
+}
+
+.logo__inverce {
+    color: var(--tertiary-color);
+}
