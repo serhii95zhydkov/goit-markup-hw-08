@@ -5,11 +5,19 @@
 }
 
 .portfolio__item {
-    flex-basis: calc((100% - 60px) / 3);
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+    
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 60px) / 3);
+    }
 }
 
 .portfolio__link {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -61,6 +69,7 @@
 }
 
 .portfolio__container {
+    flex-grow: 1;
     padding: 20px 24px;
 
     border: 1px solid #EEEEEE;
