@@ -1,4 +1,7 @@
 .address {
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 60px;
+    }
     margin-top: 20px;
 
     font-style: normal;
@@ -6,6 +9,9 @@
 }
 
 .address__item:not(:last-child) {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 8px;
+    }
     margin-bottom: 9px;
 }
 
