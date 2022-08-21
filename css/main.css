@@ -375,6 +375,10 @@ img {
   margin-bottom: 35px;
 }
 
+.mobile-menu__item:last-child {
+  margin-bottom: 302px;
+}
+
 .mobile-menu__link {
   font-size: 40px;
   line-height: 1.18;
@@ -384,6 +388,11 @@ img {
 }
 .mobile-menu__link:hover, .mobile-menu__link:focus {
   color: var(--accent-color);
+}
+
+.mobile-contacts__item:last-child {
+  margin-top: 32px;
+  margin-bottom: 64px;
 }
 
 .mobile-contacts__link {
