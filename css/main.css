@@ -160,15 +160,24 @@ img {
 }
 
 .logo {
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+}
+@media screen and (max-width: 767px) {
+  .logo {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 
 .logo__accent {
@@ -191,6 +200,11 @@ img {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .navigation__list {
+    display: none;
+  }
+}
 @media screen and (min-width: 768px) {
   .navigation__list {
     display: flex;
@@ -216,18 +230,20 @@ img {
 .navigation__link:hover, .navigation__link:focus {
   color: var(--accent-color);
 }
-.navigation__link::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  left: 0;
-  bottom: 0;
-  background-color: var(--accent-color);
-  border-radius: 2px;
-  transform: scale(0);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 768px) {
+  .navigation__link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    transform: scale(0);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .navigation__link:hover::after,
@@ -242,6 +258,11 @@ img {
   transform: scale(1);
 }
 
+@media screen and (max-width: 767px) {
+  .contacts {
+    display: none;
+  }
+}
 @media screen and (min-width: 1200px) {
   .contacts {
     display: flex;
@@ -286,11 +307,21 @@ img {
   border-bottom: 1px solid #ECECEC;
 }
 
+.page-header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-menu-open {
+  display: inline-flex;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
 @media screen and (min-width: 768px) {
-  .page-header__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  .mobile-menu-open {
+    display: none;
   }
 }
 
