@@ -800,8 +800,10 @@ img {
   }
 }
 
-.subscribe__field {
-  margin-right: 12px;
+@media screen and (min-width: 1200px) {
+  .subscribe__field {
+    margin-right: 12px;
+  }
 }
 
 .subscribe__input {
@@ -904,10 +906,15 @@ img {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-color);
+}
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    line-height: 1.15;
+  }
 }
 
 .modal__input {
@@ -988,10 +995,16 @@ img {
 
 .modal__checkbox-lable {
   display: flex;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+}
+@media screen and (min-width: 1200px) {
+  .modal__checkbox-lable {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal__checkbox-icon {
