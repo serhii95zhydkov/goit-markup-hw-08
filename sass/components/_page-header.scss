@@ -3,11 +3,17 @@
 }
 
 .page-header__container {
-    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile-menu-open {
+    display: inline-flex;
+    background-color: transparent;
+    border: none;
+    padding: 0;
     @media screen and (min-width: 768px) {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        display: none;
     }
-    
 }
