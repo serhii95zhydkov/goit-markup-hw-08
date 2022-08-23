@@ -1,7 +1,10 @@
-.address {
-    @media screen and (max-width: 1199px) {
+.address-container {
+    @media screen and (max-width: 767px) {
         margin-bottom: 60px;
     }
+}
+
+.address {
     margin-top: 20px;
 
     font-style: normal;
